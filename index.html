@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignament Of Animations</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            border: none;
+
+        }
+            .cont{
+            margin: 140px auto;
+            border: 2px solid black;
+            height: 200px;
+            width: 300px;     
+
+}
+            .cont>.items{
+            margin:0 12px;
+            font-weight: 900px;
+            font-size: x-large;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: #999999;
+            }
+
+            #item-2:after{
+                content: "";
+             content-visibility: visible;
+                color: white;
+
+            animation: colors linear 5s alternate infinite;
+            }
+            @keyframes colors{
+             0%{
+            content: "Lifestyle";
+
+            background-color: #4ec7f3;
+
+             
+             }
+             50%{
+            content: "Work";
+
+            background-color: #42C58A;
+
+             }
+             100%{
+            content: "Everything";
+
+            background-color: #DC143C;
+
+                
+             }
+            }
+    </style>
+</head>
+<body>
+<div class="cont">
+    <div class="items" id="item-1"><h1>Make</h1></div>
+    <div class="items" ><h1 id="item-2"></h1></div>
+    <div class="items" id="item-3"><h1>Awesome!</h1></div>
+
+</div>
+    
+</body>
+</html>
+Footer
